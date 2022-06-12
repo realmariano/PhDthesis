@@ -13,6 +13,11 @@ La estructura de archivo s fue pensada para mantener todo manejable y sencillo.
 
 Si no usa un sistema de manejo de referencias, tal vez le sirva mirar  https://github.com/realmariano/wiki_labo.
 
+El template busca mejorar el template _report_ (Xe)LaTeX: trabaja con _pdfLaTeX_, _XeLaTeX_ y _LuaLaTeX_, soporta fuentes TrueType y OpenType. 
+
+_BibLaTeX_ es usado para la bibliografía, backend _biber_. 
+
+
 __English version__
 
 This template was produce by modifying the one from TU Delft (v1.5) cited below.
@@ -23,6 +28,10 @@ Eveything else is self explanatory in the notes included in the files, mostly by
 The tree is thought to keep things clean and manageable.
 
 If you do not use some kind of reference management system, perhaps you will find https://github.com/realmariano/wiki_labo helpful.
+
+This template aims to simplify and improve the (Xe)LaTeX report template: it works with _pdfLaTeX_, _XeLaTeX_ and _LuaLaTeX_, as it supports TrueType and OpenType fonts. 
+
+_BibLaTeX_ is used for the bibliography, backend _biber_. 
 
 ## License
 
@@ -39,9 +48,3 @@ TU Delft (v1.5):
   <img align="centre"  src="https://github.com/dzwaneveld/TU-Delft-Unofficial-Report-Template/blob/master/figures/template.png" alt="Preview of the Template" width="85%" />
 </p>
 you can also find it in overlef: https://www.overleaf.com/latex/templates/tu-delft-unofficial-report-slash-thesis-template/swythjmksywm
-
-This template aims to simplify and improve the (Xe)LaTeX report template:
-
-This template works with _pdfLaTeX_, _XeLaTeX_ and _LuaLaTeX_, as it supports TrueType and OpenType fonts. 
-
-_BibLaTeX_ is used for the bibliography, backend _biber_. 
