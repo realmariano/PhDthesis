@@ -3,7 +3,7 @@
 This template was produce by modifying the one from TU Delft (v1.5)
 
 <p align="center">
-  <img align="centre"  src="figures/template.png" alt="Preview of the Template" width="85%" />
+  <img align="centre"  src="https://github.com/realmariano/PhDthesis/blob/c8f9b34edc5079d594f54d3de8ab412e8ede29f3/figures/template.png" alt="Preview of the Template" width="85%" />
 </p>
 
 
