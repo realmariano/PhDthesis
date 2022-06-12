@@ -1,7 +1,23 @@
 # INCALIN-UNSAM - Unofficial PhD Thesis Template (v1.0 - 2022)
 
+This template was produce by modifying the one from TU Delft (v1.5)
 
-This template was produce by modifying the one from TU Delft (v1.5):
+<p align="center">
+  <img align="centre"  src="figures/template.png" alt="Preview of the Template" width="85%" />
+</p>
+
+
+## License
+
+This template is available under CC BY-NC 4.0. For more information, see https://creativecommons.org/licenses/by-nc/4.0/. No attribution is required in reports/theses created using this template.
+
+
+
+Original version
+===========================================
+
+TU Delft (v1.5):
+
 <p align="center">
   <img align="centre"  src="https://github.com/dzwaneveld/TU-Delft-Unofficial-Report-Template/blob/master/figures/template.png" alt="Preview of the Template" width="85%" />
 </p>
