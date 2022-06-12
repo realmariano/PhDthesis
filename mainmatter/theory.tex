@@ -5,11 +5,11 @@
 \label{sec:teo:teoThermoQH}
 
 A central concept we will exploit is the use of a \textit{transmission function} $\mathcal{T}$ as means to model different aspects of our coherent systems. Since we are dealing with non-equilibrium thermodynamics we will be using known results of linear response theory and Onsager reciprocity relations \cite{onsager1931reciprocalI,onsager1931reciprocalII}, extended later by Mazur and de Groot \cite{mazur1953onsager} to systems under external magnetic fields. 
-We will follow many times a beatifull and extended review by Benenti, Casati, Saito and Whitney \cite{benenti2017fundamental} on this subject matter, in many cases we will not go deep into the theory, in those cases this review already covers perfectly the necessary theory. A second review of main importance is the one by Giazotto, et. al. \cite{Giazotto2006Mar}, where the theoretical approach is deeply embedded of experimental examples, and is also an important source of information on the subject.
+We will follow many times a beatifull and extended review by Benenti, Casati, Saito and Whitney \cite{benenti2017fundamental} on this subject matter, in many cases we will not go deep into the theory, in those cases this review already covers it perfectly. A second review of main importance is the one by Giazotto, et. al. \cite{Giazotto2006Mar}, where the theoretical approach is deeply embedded of experimental examples, and is also an important source of information on the subject.
 
 One could argue about the time-reversal symmetry and its consecuences, but it has been taken into consideration recently \cite{luo2020onsager}.
 
-A key argument is that we will be dealing always with low dimensional systems that can be modeled as two terminal systems, having chiral (directional) coherent channels connecting these terminals, as shown in figure. 
+A key argument is that we will be dealing always with low dimensional systems that can be modeled as two terminal systems, having chiral (directional) coherent channels connecting these terminals, as shown in Fig.~\ref{fig:teo:2terminal}. 
 
 As we have briefly mentioned, topologycal insulators (as the quantum Hall state) provide such particular configurations. Lets discuss then the basic mathematical approach that we will use latter.
 
@@ -28,8 +28,8 @@ In linear response, the corresponding charge and heat currents for small  $\Delt
 \label{eq:thermoLinearMatrix}
     \left(
         \begin{array}{c}
-            I^C/e \\
-            I^Q 
+            I^c/e \\
+            I^q 
         \end{array}
     \right)  
     =  
@@ -47,7 +47,7 @@ In linear response, the corresponding charge and heat currents for small  $\Delt
     \right),
 \end{equation}
 %
-$\hat{\cal L}$ is the Onsager matrix \cite{onsager1931reciprocalI, onsager1931reciprocalII} wile the right vector contains the so called . 
+being $\hat{\cal L}$ is the Onsager matrix \cite{onsager1931reciprocal, onsager1931reciprocalII}, wile the right vector contains the so called generalized forces. Here $I^{c(q)}$ is the charge(heat) current, $e$ the quantum of electrical charge, $k$ the Boltzmann constant, V the voltage across the system and $T, \Delta T$ the temperatures. 
 
 This leads to the definition of the usual thermoelectric variables:
 \begin{itemize}
@@ -69,14 +69,14 @@ where  $f(\varepsilon)=1/(e^{(\varepsilon-\mu)/k T}+1)$ is the Fermi-Dirac distr
 We will apply this formalism to a specific initial problem in the next section, it will allow us to understand its consequences and possibilities. As we have discussed such studies in quantum coherent systems are of great significance in order to control heat to work conversion, heat distribution, carrier heat transport, heat filtering, thermovoltage, peltier effect, between many others \textcolor{red}{citar papers de control térmico de electrones en estados coherentes en cada uno de los ejemplos dados}.
 
 
-\section{Onsager formalism applied to a\\ topologycal insulator problem}
+\section{Topological insulators and Onsager}
 \label{sec:teo:onsaTopo}
 
 
-During the initial course of this thesis, when  learning the Onsager formalism, the idea to study thermoelectricity and heat control also in quantum spin Hall states (QSH) was suggested. Having the possibility to apply both, the tools in need and to explore the new realm of two-dimensional (2D) topological insulators (TIs). This systems are another beatiful realization of quantum coherent transport.\textcolor{red}{agregar citas de choerent transport}
+During the initial course of this thesis, when  learning the Onsager formalism, the idea to study thermoelectricity and heat control also in quantum spin Hall states (QSH) was suggested. Having the possibility to apply both, the tools in need and to explore the new realm of two-dimensional (2D) topological insulators (TIs). This systems are another beautiful realization of quantum coherent transport.\textcolor{red}{agregar citas de choerent transport}
 
-Like the quantum hall state the quantum spin Hall state hosts edge states (channels)\cite{nowack2013imaging}, 
-examples being \ce{MnBi2Te4 / Bi2Te3} heteroestructures and \ce{CdTe/HgTe} quantum wells \cite{konig2008quantum, Koenig766,bernevig2006quantum,bernevig2006prl,bernevig2006qsh}. 
+Like the quantum hall state, the quantum spin Hall  hosts edge states (channels)\cite{nowack2013imaging}, 
+examples being \ce{MnBi2Te4 / Bi2Te3} heteroestructures and \ce{CdTe/HgTe} quantum wells \cite{konig2008quantum, Koenig766,bernevig2006qsh,bernevig2006prl}. 
 Unlike the QHE they do not require magnetic fields to be applied, here the particular band structure of the system produces a sequence of states resulting in the quantum spin Hall (QSH) state. It take place in 2D-TIs, and preserves time-reversal invariance. Hence, helical pairs of edge states appear, these are the \textit{helical Kramers pairs} \cite{kanemele2005,bernevig2006quantum,Koenig766, Roth2009} having opposite spin orientations determined by the spin orbit of the system.
 
 We will not go deeper into these impressive systems, bibliography already covers them, for example \cite{maciejko2011quantum, konig2008quantum}. Also very interesting information can be found at groups webpages, particularly \url{https://www.bernevig.com/} and \url{https://imprs-cpqm.mpg.de/93235/LP_Molenkamp}.
@@ -122,16 +122,17 @@ To obtain the  transmission function one must start by modeling the system via t
         \Psi^\dagger(x)
         }
 \end{equation}
-the Kramer's pairs wavefunctions $\Psi(x) = \left( \psi_{R\uparrow}(x),\psi_{L\downarrow} \right)^T$ include the right (left) moving carrier channels having velocity $\upsilon_F$ and $\uparrow$ (\downarrow) spin orientation. $J$ represents the magnetic exchange interaction between the magnetic moment of the island and the spin of the carriers. Fianlly, $\hat{\textbf{\sigma}} = \left( \hat{\sigma}_x,\hat{\sigma}_y, \hat{\sigma}_z \right)$ are the usual Pauli matrices.
+the Kramer's pairs wave-functions $ \Psi(x) = \left( \psi_{R \uparrow}(x),\psi_{L \downarrow}(x) \right)^T $ include the right (left) moving carrier channels having velocity $\upsilon_F$ and $\uparrow ( \downarrow )$ spin orientation. $J$ represents the magnetic exchange interaction between the magnetic moment of the island and the spin of the carriers. Finally, $\hat{\mbf{\sigma}} = \left( \hat{\sigma}_x,\hat{\sigma}_y, \hat{\sigma}_z \right)$ are the usual Pauli matrices.
 
-Meanwile, the magnetic moment is given by
+Meanwhile, the magnetic moment is given by
 \begin{align}
 \begin{split}
 \label{eq:teo:magMoment}
-    \textbf{m}(x) = \sum_{j=1}^N{\Theta(x_j - x)\Theta(x - x_{j-1})\textbf{m}_j}\\
-    \textbf{m}_j = (m_{j\perp} \cos{\phi_j}, m_{j\perp} \sin\phi_j, m_{j\parallel}) 
+    \textbf{m}(x) &= \sum_{j=1}^N{\Theta(x_j - x)\Theta(x - x_{j-1}) \, \textbf{m}_j}\\
+    \textbf{m}_j &= (m_{j\perp} \cos{\phi_j}, m_{j\perp} \sin{\phi_j}, m_{j\parallel}) 
 \end{split}
 \end{align}
+%
 $\textbf{m}_j$ being the magnetic moment per unit length of the islands having lengths $L_j = x_j - x_{j-1}$. Here $\perp$, $\parallel$ means respect to the direction of the spin orbit interaction of the TI. 
 We shall start by discussing the $N = 1$ problem and mention some interesting additional effects when $N = 2$.
 
@@ -139,27 +140,33 @@ We shall start by discussing the $N = 1$ problem and mention some interesting ad
 Solving this Hamiltonian problem as in Refs.~\cite{BustosMarun2013,Gresta2019,Gresta2021PhD} results, for the case of a \textit{single magnetic island} $N=1$, in the following transmission function 
 \begin{align}
     \label{eq:teo:transFuncQSH}
-    \trans(\varepsilon) &= \frac{\mid \varepsilon^2_\perp - \varepsilon^2 \mid}{\mid \varepsilon^2_\perp - \varepsilon^2 \mid \cos^2{\lambda} + \varepsilon^2 \sin^2{\lambda}}\\
+    \trans(\varepsilon) &= \frac{\mid \varepsilon^2_\perp - \varepsilon^2 \mid}{\mid \varepsilon^2_\perp - \varepsilon^2 \mid \cos^2{\lambda} + \varepsilon^2 \sin^2{\lambda}}\\[2ex]
     \lambda &= \frac{L}{L_0}\sqrt{\left( \varepsilon/\varepsilon_{\perp} \right)^2-1} = lr 
 \end{align}
-where $l = L/L_0$, $L_0 = \hbar \upsilon_F/\varepsilon_{\perp}$ and  $r=\sqrt{\left( \varepsilon/\varepsilon_{\perp} \right)^2-1}$. It is important to note two things regarding the transmission function:
+where $\varepsilon_{\perp, \parallel} = J m_{\perp, \parallel}$, $l = L/L_0$, $L_0 = \hbar \upsilon_F/\varepsilon_{\perp}$ and  $r=\sqrt{\left( \varepsilon/\varepsilon_{\perp} \right)^2-1}$. It is important to note two things regarding the transmission function:
 \begin{itemize}
     \item Only depends on the perpendicular projection of the moment $m_{\perp}$ to the spin-orbit interaction of the material. 
-    \item It is not symmetrical respect to $\varepsilon =0$, this means that there is an effective coupling of the Kramer pairs, resulting in a gap opening in $\varepsilon_{\perp}$.
+    \item It is symmetrical respect to $\varepsilon =0$, this means that there is an effective coupling of the Kramer pairs, resulting in a gap opening in $\varepsilon_{\perp}$ if the magnetic island es large enough.
 \end{itemize}
 
-The resulting behiviour of the system is shown in Fig.~\ref{fig:teo:tau1isla}, where the horizontal axis is normalized to $\varepsilon_{\perp}$, as mentioned we find a gap opening for once we 
-
-
-
-
-
+The resulting behavior of the system is shown in Fig.~\ref{fig:teo:tau1isla}, where the horizontal axis is normalized to $\varepsilon_{\perp}$. As mentioned, we find a gap opening if $L > L_0$, before that, the tunneling its strong. $l$ ratios higher than 4 results in a well defined gap, and as the ratio increases oscillations become denser and narrower.
+%
 \begin{figure}
     \centering
-    \includegraphics[width = 0.5\textwidth]{figures/theory/fig2.pdf}
-    \caption{Tau}
+    \includegraphics[width = 0.7\textwidth]{figures/theory/fig2.pdf}
+    \caption{Transmission function $\trans$ of the system as a function of the energy normalized to $\varepsilon_{\perp} = J m_{\perp}$, that determines the energy of the gap for a proper magnetic island length $L$. The different curvs corresponding to changes in the ratio $l = L/L_0 = L/\hbar \upsilon_F/\varepsilon_{\perp}$, note that for ratios higher than 4 a gap is already defined, and oscillations become relevant outside the gap. Higher ratios results in denser and narrower oscillations.}
     \label{fig:teo:tau1isla}
 \end{figure}
+%
+Note that wider islands results in a higher oscillating transmission function outside the gap. Such behavior will become highly interesting from the point of view of heat to work optimization, since a delta-like transmission functions should be ideal in this sense. But that is not the whole story, if we consider the way we must evaluate the Onsager coefficients \onsa{ij}, they depend on the temperature, and if it is high enough the integration in eq.~\ref{eq:teo:onsaCoef} will smooth such oscillations, even to the point where no effect is obtained. So, there is a very interesting interplay between the magnetic island length and the temperature gradient to use, this will become relevant again and again during the course of the thesis.
+
+
+
+
+
+
+
+
 
 \begin{figure}
     \centering
