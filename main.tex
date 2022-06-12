@@ -1,0 +1,89 @@
+\documentclass{layout/unsam-incalin-phd_v2}
+
+\usepackage{import}
+\usepackage{layout/header}
+
+% to compile only one chapter (otherwise just comment the next line):
+%\includeonly{mainmatter/theory}
+
+
+%% Additional packages and commands
+\setlist{itemsep=-2pt} % Reducing white space in lists slightly
+
+
+
+%%%%% Begin of document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% Roman page numbering
+\frontmatter
+
+%% Defining the main parameters
+\title{\thesisTitle}
+%\subtitle{A Catchy Optional Subtitle \\ that Grabs the Attention}
+\author{\thesisAuthor}
+\affiliation{%
+    \thesisAuthorAffiliation
+    }
+
+\coverimage{figures/cover.png} % Aspect ratio of 2:3 (portrait) recommended
+%\definecolor{title}{HTML}{4884d6} % old color for title
+\definecolor{title}{HTML}{f5ce42} % Color for title
+
+\makecover
+
+%%%% frontmatter
+\input{frontmatter/title-report}
+\input{frontmatter/preface}
+\input{frontmatter/summary}
+\input{frontmatter/aknowlegments}
+\tableofcontents
+%\listoffigures
+%\listoftables
+\input{frontmatter/nomenclature}
+
+
+% Arabic page numbering
+\mainmatter
+
+
+%%%% chapters (mainmatter)
+
+% You can use \input or \include. 
+% \input will include the .tex right into the file like it was text in that position, i.e. you can even use it in the preface.
+% \include will add a page break before and after the .tex. Also, will let you use \icludeonly{file} (see https://latexref.xyz/_005cinclude-_0026-_005cincludeonly.html) in the preamble, that becomes useful when writing your thesis to only compile a particular chapter. But you can not use it in the preface. 
+% For extra info see: https://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include
+
+\include{mainmatter/foreword}
+\include{mainmatter/introduction}
+\include{mainmatter/theory}
+\include{mainmatter/experimental}
+\include{mainmatter/temperature_corbino}
+\include{mainmatter/vtpGmodeling}
+\include{mainmatter/quality_innovation}
+\include{mainmatter/future}
+\include{mainmatter/conclusion}
+%\input{mainmatter/chapter} % file to be added
+
+
+%% Letters for chapters
+\appendix
+
+\input{appendix/appendix-a}
+\input{appendix/appendix-b}
+\input{appendix/appendix-c}
+\input{appendix/appendix-d}
+%\input{appendix/appendix-AA} % add an appendix from file appendix-AA.tex
+
+
+
+%% Add bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Urlmuskip=0mu plus 1mu\relax % avoids urls to run into margins in bibliography
+\bibliographystyle{IEEEtran} % Bib style IEEEtrans: appearance order and numbered citations
+\bibliography{PhDthesis2} % Entries are in the PhDthesis2.bib file. You should check some paper management software and scholar.google.com to produce this file. You can find some relevant info at: https://github.com/realmariano/wiki_labo
+
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

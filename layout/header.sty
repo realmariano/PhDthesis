@@ -1,0 +1,55 @@
+\ProvidesPackage{header}
+%%% User defined commands
+%\newcommand{\commandName}[number of arguments(int)]{command to replace indicating position of argument as {#1} }
+% you will use it as \commandName{including here what to place into de argument}
+% See bellow how to use commands for math enviroment, an \ensuremath must be included
+
+
+\newcommand{\etal}{et al.\xspace}
+
+
+% Math commands  %%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Vtp
+\newcommand{\vtpx}{\ensuremath{\text{V}_{tp}^x}}
+\newcommand{\vtpy}{\ensuremath{\text{V}_{tp}^y}}
+\newcommand{\vtp}{\ensuremath{\text{V}_{tp}}}
+\newcommand{\vtpout}{\ensuremath{\text{V}_{tp}^{\text{op}}}}
+\newcommand{\vtpin}{\ensuremath{\text{V}_{tp}^{\text{ip}}}}
+% capacity
+\newcommand{\capac}{\ensuremath{\text{C} \, }}
+
+% transmission function
+\newcommand{\trans}{\ensuremath{\mathcal{T}}} %transmission function
+
+% Onsager coefficients
+\newcommand{\onsa}[1]{\ensuremath{ \mathcal{L}_{ #1 } }}
+
+% bra-kets notation
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+
+% bold letter math (vectors)
+\newcommand{\mbf}[1]{\ensuremath{\mathbf{ #1 }}} 
+
+% Set operators for math
+\DeclareMathOperator{\real}{Re}
+\DeclareMathOperator{\imag}{Im}
+\DeclareMathOperator{\sgn}{sgn}
+
+
+%%% correct quotation marks
+\newcommand{\qu}[1]{``#1''}
+
+%%% Use \deg easily, everywhere
+\renewcommand{\deg}{\si{\degree}\xspace} 
+
+%%% Colors
+\usepackage{xcolor}
+\definecolor{tblue}{rgb}{0.,0.4,1}
+\definecolor{azulGris}{rgb}{0.239,0.352,0.501}
+\definecolor{tmagenta}{rgb}{.92,0,0.55}
+
+
+%%% Samples used in this work
+\newcommand{\sampleF}{F150709B}

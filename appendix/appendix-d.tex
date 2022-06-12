@@ -1,0 +1,15 @@
+\chapter{Appendix D}
+\label{appendixd}
+
+\section{Extra information on the finite elements simulation} 
+
+To predict an approximate behaivour of the GaAs/AlGaAs system as a heat conducting device some numerical simulations solving the heat-flow equation over different configurations and contour conditions were made.
+
+\textcolor{red}{seria lo ideal realizar las simulacines en 3D incluyendo los contactos metálicos, éstos van a modificar el perfil de temperatura y sumar una corrección al resultado modelado. Esto puede llevar tiempo, sólo incluir si se puede. Lo mismo respecto a un promedio ponderado integrando en una curva en el Corbino, para esto tengo que entender cómo hacer interacturar al Matlab con el comsol y de ahí armar un programa que lo haga. Sólo si se llega.}
+
+The radiation was not taken into account, a small calculation shows that it is negligible over the conduction effect, we just need to write the Stephan-Boltzmann equation. Here we can assume the worst case possible, i.e. emmisivity $ \varepsilon = 1$
+\begin{equation}
+    P_R(T) = \varepsilon \sigma A T^4 = \sigma (\SI{50}{\micro\meter})^2 (\SI{300}{\milli\kelvin})^4 = \SI{3.6E-9}{\nano\watt}
+\end{equation}
+
+
